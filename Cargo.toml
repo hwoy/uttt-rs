@@ -8,4 +8,5 @@ edition = "2021"
 [dependencies]
 ttt-rs = { git = "https://github.com/hwoy/ttt-rs.git" }
 ttt-io-rs = { git = "https://github.com/hwoy/ttt-io-rs.git" }
+clap = "4.4.7"
 
