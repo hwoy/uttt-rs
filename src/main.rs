@@ -83,7 +83,7 @@ fn main() {
         let mut players = ttt_rs::build_players();
         printtable_fn(&players[0], &players[1], &CH, BLANK_CH);
 
-        let gameid = loop {
+        let (gameid, player1, player2) = loop {
             n_turn += 1;
             let player2 = players.pop().unwrap();
             let mut player1 = players.pop().unwrap();
@@ -105,11 +105,9 @@ fn main() {
             match gameid {
                 ttt_sys::ox_gameid::ox_idgame => {}
                 ttt_sys::ox_gameid::ox_idwin | ttt_sys::ox_gameid::ox_iddraw => {
-                    players.push(player1);
-                    players.push(player2);
-                    break gameid;
+                    break (gameid, player1, player2);
                 }
-                _ => panic!("This is impossible!!!"),
+                _ => unreachable!(),
             }
 
             printtable_fn(&player1, &player2, &CH, BLANK_CH);
@@ -117,9 +115,6 @@ fn main() {
             players.push(player2);
             players.push(player1);
         };
-
-        let player2 = players.pop().unwrap();
-        let player1 = players.pop().unwrap();
 
         match gameid {
             ttt_sys::ox_gameid::ox_idwin => {
