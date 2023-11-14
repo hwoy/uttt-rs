@@ -6,6 +6,8 @@ extern crate ttt_io_rs;
 extern crate clap;
 use clap::{arg, value_parser, ArgAction};
 
+mod emsdk_wasm;
+
 type PrinttableFnType = fn(&ttt_sys::ox_player, &ttt_sys::ox_player, &[char; 2], char);
 
 fn parse_command_line(
