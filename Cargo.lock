@@ -90,9 +90,9 @@ checksum = "327762f6e5a765692301e5bb513e0d9fef63be86bbc14528052b1cd3e6f03e07"
 
 [[package]]
 name = "cc"
-version = "1.0.84"
+version = "1.0.83"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "0f8e7c90afad890484a21653d08b6e209ae34770fb5ee298f9c699fcc1e5c856"
+checksum = "f1174fb0b6ec23863f8b971027804a42614e347eafb0a95bf0b12cdae21fc4d0"
 dependencies = [
  "libc",
 ]
@@ -164,9 +164,9 @@ checksum = "a26ae43d7bcc3b814de94796a5e736d4029efb0ee900c12e2d54c993ad1a1e07"
 
 [[package]]
 name = "errno"
-version = "0.3.6"
+version = "0.3.7"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "7c18ee0ed65a5f1f81cac6b1d213b69c35fa47d4252ad41f1486dbd8226fe36e"
+checksum = "f258a7194e7f7c2a7837a8913aeab7fd8c383457034fa20ce4dd3dcb813e8eb8"
 dependencies = [
  "libc",
  "windows-sys",
@@ -273,9 +273,9 @@ dependencies = [
 
 [[package]]
 name = "proc-macro2"
-version = "1.0.69"
+version = "1.0.70"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "134c189feb4956b20f6f547d2cf727d4c0fe06722b20a0eec87ed445a97f92da"
+checksum = "39278fbbf5fb4f646ce651690877f89d1c5811a3d4acb27700c1cb3cdb78fd3b"
 dependencies = [
  "unicode-ident",
 ]
@@ -326,9 +326,9 @@ checksum = "08d43f7aa6b08d49f382cde6a7982047c3426db949b1424bc4b7ec9ae12c6ce2"
 
 [[package]]
 name = "rustix"
-version = "0.38.21"
+version = "0.38.25"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "2b426b0506e5d50a7d8dafcf2e81471400deb602392c7dd110815afb4eaf02a3"
+checksum = "dc99bc2d4f1fed22595588a013687477aedf3cdcfb26558c559edb67b4d9b22e"
 dependencies = [
  "bitflags",
  "errno",
@@ -371,7 +371,7 @@ dependencies = [
 [[package]]
 name = "ttt-io-sys"
 version = "0.1.0"
-source = "git+https://github.com/hwoy/ttt-io-sys.git#5ce6b7aa75a2c53af837e1b395f87f5bc9da29ca"
+source = "git+https://github.com/hwoy/ttt-io-sys.git#b671c36f00c15bdab4686149202397d25067feb0"
 dependencies = [
  "bindgen",
  "cc",
@@ -388,7 +388,7 @@ dependencies = [
 [[package]]
 name = "ttt-sys"
 version = "0.1.0"
-source = "git+https://github.com/hwoy/ttt-sys.git#4ea4d3963749ba465c117c794d373807cdfde5e0"
+source = "git+https://github.com/hwoy/ttt-sys.git#9e4bb19a6f020d83bf85638b28d40d95e8fc70ad"
 dependencies = [
  "bindgen",
  "cc",
